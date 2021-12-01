@@ -1,0 +1,58 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <!-- <ion-toolbar>
+    <ion-title>SignUp</ion-title>
+  </ion-toolbar> -->
+  <ion-toolbar id="Menuitem">
+    <ion-buttons slot="start">
+      <ion-back-button class="signupbutton" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen=[true]>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-title class="title">
+        Create your account
+    </ion-title>
+    <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+      <ion-item lines="none">
+        <input class="firstname" type="text" placeholder="First Name" required>
+      </ion-item>
+      <ion-item lines="none">
+        <input class="lastname" type="text" placeholder="Last Name" required>
+      </ion-item>
+      <ion-item lines="none">
+        <input class="age" type="age" placeholder="Age" required>
+      </ion-item>
+      <ion-item lines="none">
+        <input class="country" type="text" placeholder="Country" required>
+        <input class="city" type="text" placeholder="City" required>
+      </ion-item>
+      <ion-item lines="none">
+        <input class="email" type="email" placeholder="Email" required>
+      </ion-item>
+      <ion-item lines="none">
+        <input class="username" type="text" placeholder="Username" required>
+      </ion-item>
+      <ion-item lines="none">
+        <input class="password" type="password" placeholder="Password" required>
+      </ion-item>
+    </form>
+    <button class="btn saveinfo">
+      Save info
+    </button>
+    
+    <ion-item class="thanks" lines="none">
+      <ion-label>
+        THANK YOU FOR SIGNING UP
+      </ion-label>
+    </ion-item>
+   </div>
+  
+</ion-content>

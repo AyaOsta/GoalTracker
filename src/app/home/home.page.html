@@ -1,0 +1,54 @@
+<!-- <ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar id="Menuitem">
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <div class="oval" id="container">
+    <ion-title >
+      <span style="color: #FE4A4A;">G</span>
+      <span style="color: #FFFA76;">O</span>
+      <span style="color: #FA772E;">A</span>
+      <span style="color: #48B2FF;">L</span>
+      <br>
+      <span style="color: #30BF2D;">T</span>
+      <span style="color: #878787;">R</span>
+      <span style="color: #A52D5F;">A</span>
+      <span style="color: #0B1FD7;">C</span>
+      <span style="color: #100107;">K</span>
+      <span style="color: #FFF500;">E</span>
+      <span style="color: #273028;">R</span>
+     </ion-title>
+   <div class="container" id="insidecontainer">
+     <form action="" id="signin">
+      <input type="text" name="Username" id="usernamer" placeholder="Username">
+      <input type="password" name="Password" id="password" placeholder="Password">
+    </form>
+    <h6>Forgot Password?</h6>
+    <button type="button" class="btn login" (click)="profilepage()">
+      Login
+    </button>
+    <div class="container ORelement">
+     <img class="union" src="assets/Login/Union.svg">
+      <div class="center">OR</div>
+    </div>
+    <div class="googleANDfacebook">
+      <button class="btn google">Google</button>
+      <button class="btn facebook">Facebook</button>
+    </div>
+   </div>
+   <div class="outsidecontainer">
+      <p class="noaccount">Don't have an account?</p>
+      <a class="btn btn-link signup" (click)="nextpage()">Sign Up</a>
+   </div>
+  </div>
+</ion-content>

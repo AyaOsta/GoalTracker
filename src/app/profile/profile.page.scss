@@ -1,0 +1,33 @@
+#Menuitem {
+    // set background color
+    --background: #C668FF;
+
+    // set icon/text color
+    --color: var(--ion-color-secondary);
+   
+}
+
+ion-list-header{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbutton{
+ background: #C668FF;
+ color: white;
+ font-weight: bold;
+  margin:auto;
+}
+
+#container{
+  background: #C668FF;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20% ;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 150px;
+}
+
