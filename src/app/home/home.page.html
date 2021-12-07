@@ -6,15 +6,10 @@
   </ion-toolbar>
 </ion-header> -->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" mode="md">
   
-  <div class="oval" id="container">
-    <ion-title >
+  <div class="oval" id="container" >
+    <ion-title mode="md">
       <span style="color: #FE4A4A;">G</span>
       <span style="color: #FFFA76;">O</span>
       <span style="color: #FA772E;">A</span>
@@ -27,16 +22,16 @@
       <span style="color: #100107;">K</span>
       <span style="color: #FFF500;">E</span>
       <span style="color: #273028;">R</span>
-     </ion-title>
+    </ion-title>
    <div class="container" id="insidecontainer">
      <form action="" id="signin">
       <input type="text" name="Username" id="usernamer" placeholder="Username">
       <input type="password" name="Password" id="password" placeholder="Password">
     </form>
     <h6>Forgot Password?</h6>
-    <button type="button" class="btn login" (click)="profilepage()">
+    <a class="btn login" href="../profile">
       Login
-    </button>
+    </a>
     <div class="container ORelement">
      <img class="union" src="assets/Login/Union.svg">
       <div class="center">OR</div>

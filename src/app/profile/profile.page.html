@@ -1,18 +1,57 @@
 <ion-header class="ion-no-border" [translucent]="true">
   <ion-toolbar id="Menuitem">
     <ion-list-header>
-      <button class="navbutton" fill="clear">Profile</button>
-      <button class="navbutton">Dashboard</button>
-      <button class="navbutton">Panel</button>
+      <button class="navbutton" routerLink="../profile">Profile</button> 
+      <button class="navbutton" routerLink="../dashboard">Dashboard</button>
+      <button class="navbutton" routerLink="../panel">Panel</button>
     </ion-list-header>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" mode="md">
   <div id="container">
-  <ion-title>
-    Hello world 
-  </ion-title>
-  <img src="" alt="">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img class="profileimage" src="assets/profile/profilepic.webp">
+       </ion-col>
+     </ion-row>
+     <ion-row >
+       <ion-col>
+         <ion-title class="titlename">John Doe</ion-title>
+       </ion-col>
+      </ion-row>
+      <ion-row style="margin-left: 5%; margin-right: 5%;" >
+        <ion-col class="goalsbox">
+         <div>Goals Achieved </div>
+         <div id="goalsachieved"> 0</div>
+        </ion-col>
+        <ion-col class="completionratebox" >
+          <div>Completion Rate </div>
+          <div id="rateofcompletion">70% </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-title class="activegoals">Active Goals</ion-title>
+        </ion-col>
+        <hr>
+      </ion-row>
+      <ion-row class="activegoalsbox">
+        <ion-list lines="inset">
+          
+            <ion-item>
+              <ion-label>First item</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Second item</ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-label>third item</ion-label>
+            </ion-item>
+          
+        </ion-list>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>

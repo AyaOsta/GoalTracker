@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&display=swap');
+
+#Menuitem {
+    // set background color
+    --background: white;
+
+    // set icon/text color
+    --color: var(--ion-color-secondary);
+   
+}
+
+ion-list-header{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbutton{
+ background: white;
+ color: #C668FF;
+ font-weight: bold;
+ margin:auto;
+ font-size: 14px;
+ padding: 0;
+}
+
+.navbutton:hover,
+.navbutton:focus{
+  margin-bottom: 1%;
+  border-bottom: 2px solid #C668FF;
+}
+
+#container{
+  display: flex;
+  background: white;
+  border-bottom-left-radius: 50% 30%;
+  border-bottom-right-radius: 50% 30% ;
+  position: absolute;
+  width: 110%;
+  left: -5%;
+  right: 0;
+  height: 120px;
+  text-align: center;
+  justify-content: center;
+}

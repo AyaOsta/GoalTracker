@@ -13,7 +13,8 @@ export class HomePage {
   nextpage() {
     this.route.navigate(['/sign-up'])
   }
-  profilepage() {
-    this.route.navigate(['/profile'])
-  }
+
+  // profilepage() {
+  //   this.route.navigate(['/profile'])
+  // }
 }

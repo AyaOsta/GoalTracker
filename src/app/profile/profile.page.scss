@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&display=swap');
+
 #Menuitem {
     // set background color
     --background: #C668FF;
@@ -17,10 +19,19 @@ ion-list-header{
  background: #C668FF;
  color: white;
  font-weight: bold;
-margin:auto;
+ margin:auto;
+ font-size: 14px;
+ padding: 0;
+}
+
+.navbutton:hover,
+.navbutton:focus{
+  margin-bottom: 1%;
+  border-bottom: 2px solid white;
 }
 
 #container{
+  display: flex;
   background: #C668FF;
   border-bottom-left-radius: 50% 30%;
   border-bottom-right-radius: 50% 30% ;
@@ -28,7 +39,112 @@ margin:auto;
   width: 110%;
   left: -5%;
   right: 0;
-  text-align: center;
   height: 120px;
+  text-align: center;
+  justify-content: center;
 }
 
+.profileimage{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-top: 8%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titlename {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+.goalsbox, .completionratebox {
+  margin-top: 4%;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  // padding: 4px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: capitalize;
+
+  color: white;
+
+  background: #60009B;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.goalsbox {
+  margin-right: 2%;
+}
+
+.completionratebox{
+  margin-left: 2%;
+}
+
+#goalsachieved, #rateofcompletion {
+  padding:0px;
+
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: 'tnum' on, 'onum' on;
+
+  color: #FFFFFF;
+
+}
+
+.activegoals{
+  margin-left: 5%;
+  margin-top: 5%;
+  float: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #60009B;
+
+  border-bottom: 1px solid #60009B;
+  padding:0px;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.activegoalsbox{
+  margin-top: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #60009B;
+  border-radius: 25px;
+
+  // height: 156px;
+}
+
+ion-list{
+  width: 90%;
+  background: transparent;
+}
+ion-item{
+  --background: transparent;
+}
+
+ion-item:not(:last-child){
+  --border-color: white;
+}
