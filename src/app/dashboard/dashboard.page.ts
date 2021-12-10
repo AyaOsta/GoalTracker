@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardPage implements OnInit {
 
-  name: string = "";
+  name: "joe";
+  weather: string;
+  date: string;
 
   constructor() { }
 

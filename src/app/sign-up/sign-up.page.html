@@ -14,28 +14,28 @@
     <ion-title class="title">
         Create your account
     </ion-title>
-    <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+    <form [formGroup]="signupForm" (ngSubmit)="submitForm()" novalidate>
       <ion-item lines="none">
-        <input name="fname" class="firstname" type="text" placeholder="First Name" required>
+        <ion-input [(ngModel)]="fname" class="firstname" type="text" placeholder="First Name" required></ion-input>
       </ion-item>
       <ion-item lines="none">
-        <input name="lname" class="lastname" type="text" placeholder="Last Name" required>
+        <ion-input [(ngModel)]="lname" class="lastname" type="text" placeholder="Last Name" required></ion-input>
       </ion-item>
       <ion-item lines="none">
-        <input class="age" type="age" placeholder="Age" required>
+        <ion-input  [(ngModel)]="age" class="age" type="age" placeholder="Age" required></ion-input>
       </ion-item>
       <ion-item lines="none">
-        <input name="country"  class="country" type="text" placeholder="Country" required>
-        <input name="city"  class="city" type="text" placeholder="City" required>
+        <ion-input  [(ngModel)]="country" class="country" type="text" placeholder="Country" required></ion-input>
+        <ion-input  [(ngModel)]="city" class="city" type="text" placeholder="City"   required></ion-input>
       </ion-item>
       <ion-item lines="none">
-        <input name="email"  class="email" type="email" placeholder="Email" required>
+        <ion-input [(ngModel)]="email" class="email" type="email" placeholder="Email" required></ion-input>
       </ion-item>
       <ion-item lines="none">
-        <input name="username" class="username" type="text" placeholder="Username" required>
+        <ion-input [(ngModel)]="username" class="username" type="text" placeholder="Username" required></ion-input>
       </ion-item>
       <ion-item lines="none">
-        <input name="password" class="password" type="password" placeholder="Password" required>
+        <ion-input [(ngModel)]="password" class="password" type="password" placeholder="Password" required></ion-input>
       </ion-item>
     </form>
     <button class="btn saveinfo" (click)="putdata()">

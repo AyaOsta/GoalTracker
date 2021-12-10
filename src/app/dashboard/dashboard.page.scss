@@ -58,3 +58,63 @@ ion-list-header{
   text-align: center;
   color: white;
 }
+
+.listofgoals {
+  display: flex;
+  position: relative;
+
+  margin: auto;
+  align-items: center;
+  width: 80%;
+  margin-top: 5%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  
+  height: 40px;
+
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 18px;
+
+  color: #C668FF;
+
+  // border: 0.5px solid #C668FF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  -webkit-text-stroke-color: #C668FF ;
+  -webkit-text-stroke-width:  0.2px; 
+  
+}
+
+.goalslist {
+  margin-top: 8%;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.goal{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF; 
+
+  --background: #60009B;
+  --border-radius: 10px;
+}
+
+.goal:not(:first-child) {
+  margin-top: 4%;
+}
+
+.addgoal{
+  --background: #60009B;
+}
+
+

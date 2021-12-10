@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,13 +9,34 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  constructor(private route: Router) { }
+  username: any;
+  password: any;
 
-  nextpage() {
+  constructor(private route: Router, public http: HttpClient) { }
+
+  public nextpage() {
     this.route.navigate(['/sign-up'])
   }
 
-  // profilepage() {
-  //   this.route.navigate(['/profile'])
-  // }
+
+  public profilepage() {
+    let data = {
+      username: this.username,
+      password: this.password,
+    }
+
+    this.http
+      .post('http://localhost:8888/GoalTrackerPHP/login.php', data, { responseType: 'text' })
+      .subscribe((response) => {
+        console.log(response);
+        if (JSON.parse(response) == "found") {
+          this.route.navigate(['/profile'])
+        }
+        else {
+          alert("Username or password not found ")
+        }
+      });
+
+    // this.route.navigate(['/profile'])
+  }
 }

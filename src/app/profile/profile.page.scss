@@ -133,7 +133,7 @@ ion-list-header{
   margin-right: 5%;
   background: #60009B;
   border-radius: 25px;
-
+  
   // height: 156px;
 }
 
@@ -143,6 +143,7 @@ ion-list{
 }
 ion-item{
   --background: transparent;
+  --color:white;
 }
 
 ion-item:not(:last-child){

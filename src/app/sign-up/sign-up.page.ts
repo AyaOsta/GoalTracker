@@ -3,54 +3,83 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 
+
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.page.html',
   styleUrls: ['./sign-up.page.scss'],
 })
+
+
 export class SignUpPage implements OnInit {
 
-  public firstname: string;
-  public lastname: string;
-  public age: any;
-  public city: string;
-  public country: string;
-  public username: any;
-  public password: any;
-  public email: any;
+  fname: any;
+  lname: any;
+  age: any;
+  country: any;
+  city: any;
+  email: any;
+  username: any;
+  password: any;
 
+  userData = {};
 
   constructor(public http: HttpClient) {
   };
 
-  userData = {
-    firstname: "john",
-    lastname: "Doe",
-    age: "19",
-    country: "Lebanon",
-    city: "Beirut",
-    email: "john@lau.edu",
-    username: "johndoe",
-    password: "12345"
-  };
 
-  fetchdata() {
-    this.http.get('http://localhost:8888/GoalTrackerPHP/SignUp.php').subscribe((response) => {
-      console.log(response);
-    });
+  submitForm(): void {
+    // Process checkout data here
+    let userData = {
+      firstname: this.fname,
+      lastname: this.lname,
+      age: this.age,
+      country: this.country,
+      city: this.city,
+      email: this.email,
+      username: this.username,
+      password: this.password
+    };
+
+    console.warn('Your order has been submitted', userData);
+
   }
+
+
 
 
   putdata() {
+
+    let userData = {
+      firstname: this.fname,
+      lastname: this.lname,
+      age: this.age,
+      country: this.country,
+      city: this.city,
+      email: this.email,
+      username: this.username,
+      password: this.password
+    };
     this.http
-      .post('http://localhost:8888/GoalTrackerPHP/SignUp.php', this.userData, { responseType: 'text' })
+      .post('http://localhost:8888/GoalTrackerPHP/SignUp.php', userData, { responseType: 'text' })
       .subscribe((response) => {
         console.log(response);
       });
+
   }
 
   ngOnInit() {
-    console.log(this.userData);
+    let userData = {
+      firstname: this.fname,
+      lastname: this.lname,
+      age: this.age,
+      country: this.country,
+      city: this.city,
+      email: this.email,
+      username: this.username,
+      password: this.password
+    };
+    console.log(userData);
   }
 
 }

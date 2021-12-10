@@ -10,6 +10,64 @@
 
 <ion-content [fullscreen]="true" mode="md">
   <div id="container">
-
+    <ion-grid class="maingrid">
+      <ion-row>
+        <ion-item class="sharegoal" lines="none">
+          <ion-textarea rows="3" placeholder="Write Your Goal..." ></ion-textarea>
+        </ion-item>    
+      </ion-row>
+      <ion-row class="mt-2">
+        <ion-button class="sharebtn" (click)="onClick()" >
+          share
+        </ion-button>
+      </ion-row>
+      <ion-row class="mt-3">
+        <img src="assets/Login/Line 9.svg" class="doublesidedarrow">
+      </ion-row>
+      <ion-row class="mt-3 activegoalsbox">
+          <ion-list lines="inset">
+            <ion-item class="item">
+              <ion-card>
+                  <ion-card-title  class="cardtitle">John Doe <small>shared</small></ion-card-title>
+                  <p class="mt-1 sharedgoal">Goal Shared</p>    
+                  <ion-grid class="postdetails">
+                    <ion-row>
+                      <ion-col size="5">
+                        <ion-icon class="btn hearticon" name="heart" color="light" (click)="changeColor()"></ion-icon>
+                        <icon-label class="posttexts">17 likes</icon-label>
+                      </ion-col>
+                      <ion-col size="5">
+                        <icon-label class="posttexts"> 0% similarity</icon-label>
+                      </ion-col>
+                      <ion-col size="2">
+                        <ion-icon class="btn chatbubbles" name="chatbox" color="light"></ion-icon>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+              </ion-card>
+            </ion-item>
+            <ion-item class="item">
+              <ion-card>
+                  <ion-card-title  class="cardtitle">John Doe <small>shared</small></ion-card-title>
+                  <p class="mt-1 sharedgoal">Goal Shared</p>    
+                  <ion-grid class="postdetails">
+                    <ion-row>
+                      <ion-col size="5">
+                        <ion-icon class="btn hearticon" name="heart" color="light" (click)="changeColor()"></ion-icon>
+                        <icon-label class="posttexts">17 likes</icon-label>
+                      </ion-col>
+                      <ion-col size="5">
+                        <icon-label class="posttexts"> 0% similarity</icon-label>
+                      </ion-col>
+                      <ion-col size="2">
+                        <ion-icon class="btn chatbubbles" name="chatbox" color="light"></ion-icon>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+              </ion-card>
+            </ion-item>
+        </ion-list>
+      </ion-row>
+   </ion-grid>
   </div>
 </ion-content>

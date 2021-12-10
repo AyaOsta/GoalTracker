@@ -1,9 +1,10 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>goals</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content [fullscreen]="true" mode="md">
+  <ion-header class="ion-no-border" [translucent]="true" mode="md">
+    <ion-toolbar id="Menuitem">
+      <ion-buttons slot="start">
+        <ion-back-button class="backbutton" defaultHref="home"></ion-back-button>
+      </ion-buttons>
+      <ion-button slot="end" class="savebutton">Save</ion-button>
+    </ion-toolbar>
+  </ion-header>
 </ion-content>

@@ -25,11 +25,11 @@
     </ion-title>
    <div class="container" id="insidecontainer">
      <form action="" id="signin">
-      <input type="text" name="Username" id="usernamer" placeholder="Username">
-      <input type="password" name="Password" id="password" placeholder="Password">
+      <input [(ngModel)]="username" type="text" name="Username" id="usernamer" placeholder="Username">
+      <input [(ngModel)]="password" type="password" name="Password" id="password" placeholder="Password">
     </form>
     <h6>Forgot Password?</h6>
-    <a class="btn login" href="../profile">
+    <a class="btn login" (click)="profilepage()">
       Login
     </a>
     <div class="container ORelement">
