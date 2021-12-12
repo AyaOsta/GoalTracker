@@ -37,6 +37,8 @@ export class HomePage {
         }
       });
 
+    localStorage.setItem('username', this.username);
+    console.log(localStorage.getItem('username'));
     // this.route.navigate(['/profile'])
   }
 }

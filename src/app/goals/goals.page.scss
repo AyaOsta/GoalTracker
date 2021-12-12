@@ -20,3 +20,115 @@
 
   --color: #FFFFFF;
 }
+
+#container{
+  display: flex;
+  // text-align: center;
+  justify-content: center;
+}
+
+ion-grid {
+  --ion-grid-margin: auto;
+}
+
+.goaltitle, .goaldescription {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #60009B;
+
+}
+
+.goaltitle {
+  height: 37px;
+}
+
+.text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+
+  color: #60009B;
+
+}
+
+.date {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  // width: 30px;
+  height: 22px;
+  font-size: 14px;
+  text-align: center;
+  padding:0 ;
+}
+
+.time {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  // width: 40px;
+  height: 22px;
+  font-size: 14px;
+  text-align: center;
+  padding:0 ;
+}
+
+.addstep{
+  color: #60009B;
+  float: right;
+  padding: auto;
+}
+
+.listofsteps {
+  width: 95%;
+  margin: auto;
+  padding: 0;
+}
+
+.step {
+  margin-left: 2%;
+}
+
+ion-checkbox {
+  --border-color: black;
+  --border-radius:  50%;
+  --size: 12px;
+  --checkmark-color: green;
+  --border-color-checked: black;
+}
+
+ion-progress-bar{
+  --background: white ;
+  --progress-background: white;
+  --buffer-background: var(--ion-color-step-400);
+  // border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 20px;
+}
+
+.deletebutton{
+  margin: auto;
+  width: 100%;
+  margin-bottom: 5%;
+  background: #FFFFFF;
+  border: 1px solid #D92121;
+  box-sizing: border-box;
+  border-radius: 25px;
+  color: #D92121;
+  --color-hover:#D92121;
+}

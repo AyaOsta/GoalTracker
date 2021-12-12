@@ -7,13 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardPage implements OnInit {
 
-  name: "joe";
+  name: any;
   weather: string;
   date: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.name = localStorage.getItem('firstname');
   }
 
 

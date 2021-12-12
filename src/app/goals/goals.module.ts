@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { GoalsPageRoutingModule } from './goals-routing.module';
 
 import { GoalsPage } from './goals.page';
+import { StepsComponentComponent } from 'src/app/components/steps-component/steps-component.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { GoalsPage } from './goals.page';
     IonicModule,
     GoalsPageRoutingModule
   ],
-  declarations: [GoalsPage]
+  declarations: [GoalsPage,
+    StepsComponentComponent]
 })
-export class GoalsPageModule {}
+export class GoalsPageModule { }

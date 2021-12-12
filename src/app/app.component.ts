@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor() {
+
+    // constructor(private injector: Injector) {
+    //   //The customElements is used for defining a custom element globaly.
+    //   const customElement = createCustomElement(StepsComponentComponent, { injector });
+    //   //Defining a new element
+    //   customElements.define('app-step', customElement);
+    // }
+  }
 }
